@@ -29,6 +29,7 @@
     <div id="cesiumContainer"></div>
     <script>
       var viewer = new Cesium.Viewer("cesiumContainer");
+
       var polygon = viewer.entities.add({
           name:"TOKYO TOCHO",
           description:"This is TOKYO TOCHO.",
@@ -43,17 +44,17 @@
               extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
               material : Cesium.Color.RED.withAlpha(0.5),
               outline : true,
-              outlineColor : Cesium.Color.BLACK
-          }
+              outlineColor : Cesium.Color.BLACK,
+          },
       });
 
-      var label = viewer.tntities.add({
-          position: Cesium.Cartesian3.fromDegrees(139.6917,35.6895,250),
+      var label = viewer.entities.add({
+          position: Cesium.Cartesian3.fromDegrees(139.6917, 35.6895, 250),
           label: {
               text: "ÅìµþÅÔÄ£"
               font: "20px sans-serif",
               fillColor: Cesium.Color.YELLOW,
-              outlineColor: Cesium.Color.BLACL,
+              outlineColor: Cesium.Color.BLACK,
               outlineWidth: 2,
               style: Cesium.LabelStyle.FILL_AND_OUTLINE
           }
@@ -67,6 +68,7 @@
               roll : 0.0
           }
       });
+
     </script>
   </body>
 </html>
