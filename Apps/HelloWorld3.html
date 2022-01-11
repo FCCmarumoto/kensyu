@@ -32,15 +32,15 @@
       var polygon = viewer.entities.add({
           name:"東京都庁",
           description:"ここは東京都庁です。",
-          pokygon : {
+          polygon : {
               hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
                   139.691699,35.687139,0,
                   139.692686,35.687331,0,
                   139.691591,35.692036,0,
                   139.69054,35.691862,0]).
               heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
-              ext rudedHeight: 200.0,
-              ext rudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 200.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
               material : Cesium.Color.RED.withAlpha(0.5),
               outline : true,
               outlineColor : Cesium.Color.BLACK
